@@ -2,7 +2,6 @@ import React from "react"
 import H2Component from "../common/H2Component"
 import PuzzleComponent from "./PuzzleComponent"
 import { useSelector } from "react-redux"
-import PuzzleBoxStyle from "./PuzzleBoxStyle"
 
 const PuzzleBoxQuestionComponent = () => {
 
@@ -14,12 +13,12 @@ const PuzzleBoxQuestionComponent = () => {
     }
 
     return (
-        <PuzzleBoxStyle id = "puzzleBoxQuestion" question>
+        <div id ="puzzleBoxQuestion" className="puzzleBox">
             <H2Component id="question" text="Question"/>
             {
                 newList.map(element => <PuzzleComponent id = {element}/>)
             }
-        </PuzzleBoxStyle>
+        </div>
     )
 }
 

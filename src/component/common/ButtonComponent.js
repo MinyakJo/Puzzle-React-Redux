@@ -2,65 +2,6 @@ import React from "react"
 import { useDispatch } from "react-redux"
 import { setCol, reload } from "../../action/action"
 import ImgComponent from "./ImgComponent"
-import styled, { css } from "styled-components"
-
-
-const ButtonStyle = styled.button`
-    cursor: pointer;
-
-    ${props => {
-        const id = props.id
-
-        switch(id){
-           case "foldButton":
-                return css`
-                    height: var(--foldButton-height);
-                    border-top-right-radius: var(--border-radius);
-                    border-bottom-right-radius: var(--border-radius);
-                    border-left: none;
-                `
-            case "startButton":
-            case "3xButton":
-            case "4xButton":
-            case "5xButton":
-                return css`
-                    width: 90%;
-                    padding: 0 10%;
-                    border: none;
-                `
-            case "resetButton":
-                return css`
-                    position: fixed;
-                    display: flex;
-                    width: 48px;
-                    aspect-ratio: 1/1;
-                    justify-content: center;
-                    align-items: center;
-                    bottom: 7%;
-                    right: 5%;
-                    opacity: 30%;
-                    z-index: 999;
-                    border: none;
-                    border-radius: 100%;
-
-                    transition: all 2s;
-
-                    & img{
-                        transition: all 2s;
-                    }
-                    & img:hover{
-                        transform: rotate(360deg);
-                    }
-                    &:hover{
-                        opacity: 100%;
-                    }
-                    &:active{
-                        width: 46px;
-                    }
-                `
-        }
-    }}
-`
 
 const ButtonComponent = (props) => {
 
@@ -136,9 +77,9 @@ const ButtonComponent = (props) => {
     }
 
     return (
-        <ButtonStyle id = {props.id} onClick = {onClickEvent}>
+        <button id = {props.id} onClick = {onClickEvent}>
             <ImgComponent src = {props.src}/>
-        </ButtonStyle>
+        </button>
     )
 }
 

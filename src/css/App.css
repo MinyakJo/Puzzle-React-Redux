@@ -15,23 +15,23 @@
     margin-top: var(--logo-margin);
     align-items: center;
 }
-/* #logoText{
+#logoText{
     display: inline-block;
     margin-left: var(--logo-margin);
     color: var(--main-color);
-} */
+}
 #logo img{
     width: var(--leftLogo-width-height);
     height: 72px;
 }
-/* #leftBar{
+#leftBar{
     position: fixed;
     width: var(--leftBar-width);
     height: 100%;
     border-right: 1px solid var(--border-color);
 
     transition: left 1.5s;
-} */
+}
 #leftBarBox{
     height: calc(100% - 72px + var(--logo-margin));
     overflow-y: scroll;
@@ -41,7 +41,7 @@
     styled-components로 인해 잠시 주석처리
 */
 
-/* #leftBarBox button{
+#leftBarBox button{
     width: 90%;
     padding: 0 10%;
     border: none;
@@ -54,18 +54,13 @@
     margin-top: var(--foldButton-margin);
 
     transition: margin 1.5s;
-} */
-
-/*
-    styled-components로 인해 잠시 주석처리
-*/
-
-/* #foldButton{
+}
+#foldButton{
     height: var(--foldButton-height);
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     border-left: none;
-} */
+}
 .leftButtonBox{
     display: flex;
     justify-content: center;
@@ -112,10 +107,7 @@
     width: 98%;
     text-align: center;
 }
-/*
-    styled-components로 인해 잠시 주석처리
-*/
-/* .puzzle{
+.puzzle{
     display: table;
     width: 24%;
     aspect-ratio: 1/1;
@@ -140,7 +132,7 @@
     border-radius: 100%;
 
     transition: all 2s;
-} */
+}
 
 #leftBarBox::-webkit-scrollbar{
     width: 10px;
@@ -154,7 +146,7 @@
     styled-components로 인해 잠시 주석처리
 */
 
-/* #resetButton img{
+#resetButton img{
     transition: all 2s;
 }
 #resetButton img:hover{
@@ -164,5 +156,5 @@
     opacity: 100%;
 }
 #resetButton:active{
-    width: 46px;   
-} */
+    width: 46px;
+}

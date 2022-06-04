@@ -1,11 +1,11 @@
 import React from "react"
-
+import style from "./LeftBarCSS/LeftBarBoxStyle.module.scss"
 import LeftBarButtonBoxComponent from "./LeftBarButtonBoxComponent"
 
 const LeftBarBoxComponent = () => {
 
     return (
-        <div id="leftBarBox">
+        <div className = {style.leftBarBox}>
             <LeftBarButtonBoxComponent/>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from "react"
-import H2Component from "../common/H2Component"
+import style from "./MainCSS/PuzzleBoxQuestionStyle.module.scss"
+import H2Component from "../Common/H2Component"
 import PuzzleComponent from "./PuzzleComponent"
 import { useSelector } from "react-redux"
 
@@ -13,7 +14,7 @@ const PuzzleBoxQuestionComponent = () => {
     }
 
     return (
-        <div id ="puzzleBoxQuestion" className="puzzleBox">
+        <div id ={style.puzzleBoxQuestion} className="puzzleBox">
             <H2Component id="question" text="Question"/>
             {
                 newList.map(element => <PuzzleComponent id = {element}/>)

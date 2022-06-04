@@ -1,6 +1,5 @@
 import React from "react"
-import "./css/App.css"
-import "./css/Public.css"
+import style from "./PublicStyle.module.scss"
 import LeftBarComponent from "./component/LeftBar/LeftBarComponent"
 import MainComponent from "./component/Main/MainComponent"
 import FoldButtonBoxComponent from "./component/LeftBar/FoldButtonBoxComponent"

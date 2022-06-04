@@ -1,7 +1,8 @@
 import React from "react"
+import style from "./MainCSS/PuzzleStyle.module.scss"
 import { useSelector, useDispatch } from "react-redux"
 import { puzzleClick } from "../../action/action"
-import ImgComponent from "../common/ImgComponent"
+import ImgComponent from "../Common/ImgComponent"
 
 
 const PuzzleComponent = (props) => {
@@ -16,7 +17,7 @@ const PuzzleComponent = (props) => {
     }
 
     return (
-        <div id = {props.id} className = "puzzle" onClick = {puzzleClickEvent}>
+        <div id = {props.id} className = {style.puzzle} name = "puzzle" onClick = {puzzleClickEvent}>
             <ImgComponent src = {src}/>
         </div>
     )

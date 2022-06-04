@@ -1,0 +1,41 @@
+$main-color: #F7CD72;
+$hover-color: #ceae67;
+
+$border-color: #F7CD72;
+$border-radius: 12px;
+
+$leftBar-width: 240px;
+$leftLogo-width: 72px;
+$leftLogo-height: 72px;
+$leftLogo-margin: 12px;
+
+$leftButtonBox-radius: 48px;
+$leftButtonBox-padding: 12px;
+
+$foldButtonBox-width: 20px;
+$foldButton-height: 120px;
+$foldButton-margin-top: 36px;
+
+$resetButton-width: 48px;
+
+:export{
+    mainColor: $main-color;
+    hoverColor: $hover-color;
+
+    borderColor: $border-color;
+    borderRadius: $border-radius;
+
+    leftBarWidth: $leftBar-width;
+    leftLogoWidth: $leftLogo-width;
+    leftLogoHeight: $leftLogo-height;
+    leftLogoMargin: $leftLogo-margin;
+
+    leftButtonBoxRadius: $leftButtonBox-radius;
+    leftButtonBoxPadding: $leftButtonBox-radius;
+
+    foldButtonBoxWidth: $foldButtonBox-width;
+    foldButtonBoxHeight: $foldButton-height;
+    foldButtonBoxMarginTop: $foldButton-margin-top;
+
+    resetButtonWidth: $resetButton-width;
+}

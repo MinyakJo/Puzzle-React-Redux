@@ -1,0 +1,21 @@
+@import "../../../Variables.module.scss";
+
+#logo{
+    display: flex;
+    width: calc(100% - $leftLogo-margin - $foldButtonBox-width);
+    height: 72px;
+    margin-left: $leftLogo-margin;
+    margin-top: $leftLogo-margin;
+    align-items: center;
+
+    img{
+        width: $leftLogo-width;
+        height: $leftLogo-height;
+    }
+
+    h1{
+        display: inline-block;
+        margin-left: $leftLogo-margin;
+        color: $main-color;
+    }
+}

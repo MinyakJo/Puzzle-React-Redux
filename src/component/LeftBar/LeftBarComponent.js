@@ -1,12 +1,12 @@
 import React from "react"
-
+import style from "./LeftBarCSS/LeftBarStyle.module.scss"
 import LogoComponent from "./LogoComponent"
 import LeftBarBoxComponent from "./LeftBarBoxComponent"
 
 const LeftBarComponent = () => {
 
     return (
-        <nav id="leftBar" style = {{left: "0"}}>
+        <nav id = {style.leftBar}>
             <LogoComponent/>
             <LeftBarBoxComponent/>
         </nav>

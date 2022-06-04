@@ -1,0 +1,15 @@
+@import "../../../Variables.module.scss";
+
+#puzzleBoxAnswer{
+    display: flex;
+    width: 35%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        width: 98%;
+        text-align: center;
+    }
+}

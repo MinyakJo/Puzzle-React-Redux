@@ -1,0 +1,19 @@
+@import "../../../Variables.module.scss";
+
+#foldButtonBox{
+    display: flex;
+    position: relative;
+    width: $foldButtonBox-width;
+    flex-direction: column;
+    margin-top: $foldButton-margin-top;
+    margin-left: $leftBar-width;
+
+    transition: all 1.5s;
+
+    button{
+        height: $foldButton-height;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        border-left: none;
+    }
+}

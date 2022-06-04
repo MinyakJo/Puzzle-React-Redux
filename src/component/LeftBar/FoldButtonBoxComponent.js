@@ -1,12 +1,12 @@
 import React from "react"
-
-import ButtonComponent from "../common/ButtonComponent"
+import style from "./LeftBarCSS/FoldButtonBoxStyle.module.scss"
+import ButtonComponent from "../Common/ButtonComponent"
 
 
 const FoldButtonBoxComponent = () => {
      
     return (
-        <div id = "foldButtonBox" style = {{marginLeft: "var(--leftBar-width)"}}>
+        <div id = {style.foldButtonBox}>
             <ButtonComponent id = "foldButton" src = "./img/backLightBrown.png"/>
         </div>
     )

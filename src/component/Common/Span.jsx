@@ -1,10 +1,10 @@
 import React from "react"
 
-const SpanComponent = (props) => {
+const Span = (props) => {
 
     return (
         <span className = {props.className}>{props.text}</span>
     )
 }
 
-export default SpanComponent
+export default Span

@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import style from "./MainCSS/TimerStyle.module.scss"
 import { useSelector, useDispatch } from "react-redux"
 import { setTime } from "../../action/action"
-import H2Component from "../Common/H2Component"
+import H2 from "../Common/H2"
 
 const Timer = () => {
 
@@ -26,7 +26,7 @@ const Timer = () => {
     
     return (
         <div id = "timer" className = {style.timer}>
-            <H2Component id = "timerText" text = "경과 시간"/>
+            <H2 text = "경과 시간"/>
             <p>{time}초</p>
         </div>
     )

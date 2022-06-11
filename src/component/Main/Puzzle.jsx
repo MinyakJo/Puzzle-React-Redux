@@ -2,10 +2,10 @@ import React from "react"
 import style from "./MainCSS/PuzzleStyle.module.scss"
 import { useSelector, useDispatch } from "react-redux"
 import { puzzleClick } from "../../action/action"
-import ImgComponent from "../Common/ImgComponent"
+import Img from "../Common/Img"
 
 
-const PuzzleComponent = (props) => {
+const Puzzle = (props) => {
 
     const random = useSelector(state => state.randomList[props.id])
     const src = useSelector(state => state.imgList[random])
@@ -18,9 +18,9 @@ const PuzzleComponent = (props) => {
 
     return (
         <div id = {props.id} className = {style.puzzle} name = "puzzle" onClick = {puzzleClickEvent}>
-            <ImgComponent src = {src}/>
+            <Img src = {src}/>
         </div>
     )
 }
 
-export default PuzzleComponent
+export default Puzzle

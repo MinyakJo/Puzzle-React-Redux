@@ -2,27 +2,26 @@ import React from "react"
 import variables from "../../Variables.module.scss"
 import { useDispatch } from "react-redux"
 import { setCol, reload } from "../../action/action"
-import ImgComponent from "./ImgComponent"
+import Img from "./Img"
 
-const ButtonComponent = (props) => {
+const Button = (props) => {
 
     const dispatch = useDispatch()
 
     const onClickEvent = (event) => {
         const target = event.currentTarget.id
 
-        const leftBar = document.querySelector("#root nav")
-        const x3Button = document.getElementById("3xButton")
-        const x4Button = document.getElementById("4xButton")
-        const x5Button = document.getElementById("5xButton")
+        const leftBar = document.getElementById("leftBar")
+        const x3Button = document.getElementById("x3Button")
+        const x4Button = document.getElementById("x4Button")
+        const x5Button = document.getElementById("x5Button")
 
-        const foldButtonBox = document.querySelectorAll("#root div")[3]
-        const foldButton = document.getElementById(`foldButton`)
+        const foldButtonBox = document.getElementsByClassName("foldButtonBox")[0]
+        const foldButton = document.getElementById("foldButton")
 
-        const main = document.querySelector("#root main")
-        const question = document.querySelector(`main div`)
+        const main = document.getElementById("main")
+        const question = document.getElementsByName("question")[0];
         const timer = document.getElementById("timer")
-        
         switch(target){
             case "foldButton":
                 if(leftBar.style.left == `-${variables.leftBarWidth}`){
@@ -50,7 +49,7 @@ const ButtonComponent = (props) => {
 
                 break
             
-            case "3xButton":
+            case "x3Button":
                 dispatch(setCol(3))
                 question.style.display = "none"
                 timer.style.display = "none"
@@ -59,7 +58,7 @@ const ButtonComponent = (props) => {
                 x5Button.style.border = "none"
                 break
 
-            case "4xButton":
+            case "x4Button":
                 dispatch(setCol(4))
                 question.style.display = "none"
                 timer.style.display = "none"
@@ -68,7 +67,7 @@ const ButtonComponent = (props) => {
                 x5Button.style.border = "none"
                 break
 
-            case "5xButton":
+            case "x5Button":
                 dispatch(setCol(5))
                 question.style.display = "none"
                 timer.style.display = "none"
@@ -83,9 +82,9 @@ const ButtonComponent = (props) => {
 
     return (
         <button id = {props.id} onClick = {onClickEvent}>
-            <ImgComponent src = {props.src}/>
+            <Img src = {props.src}/>
         </button>
     )
 }
 
-export default ButtonComponent
+export default Button

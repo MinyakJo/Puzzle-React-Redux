@@ -3,17 +3,23 @@
 #foldButtonBox{
     display: flex;
     position: relative;
-    width: $foldButtonBox-width;
+    width: 20px;
     flex-direction: column;
-    margin-top: $foldButton-margin-top;
+    margin-top: 36px;
     margin-left: $leftBar-width;
 
     transition: all 1.5s;
 
     button{
-        height: $foldButton-height;
+        height: 120px;
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         border-left: none;
+        &:hover{
+            border-color: darken($main-color, 10%);
+        }
+        &:active{
+            border-color: darken($main-color, 20%);
+        }
     }
 }

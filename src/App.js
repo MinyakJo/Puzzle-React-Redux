@@ -1,16 +1,16 @@
 import React from "react"
 import style from "./PublicStyle.module.scss"
-import LeftBarComponent from "./component/LeftBar/LeftBarComponent"
-import MainComponent from "./component/Main/MainComponent"
-import FoldButtonBoxComponent from "./component/LeftBar/FoldButtonBoxComponent"
+import LeftBar from "./component/LeftBar/LeftBar"
+import Main from "./component/Main/Main"
+import FoldButtonBox from "./component/LeftBar/FoldButtonBox"
 
 const App = () => {
 
     return (
             <React.Fragment>
-                <LeftBarComponent/>
-                <FoldButtonBoxComponent/>
-                <MainComponent/>
+                <LeftBar/>
+                <FoldButtonBox/>
+                <Main/>
             </React.Fragment>
         )
 }
